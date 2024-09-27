@@ -1,5 +1,17 @@
 ---
+
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
+
+<div class="flex items-center justify-center bg-black">
+  <button
+    class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group"
+  >
+    <span
+      class="relative z-10 transition-colors duration-400 group-hover:text-black"
+      >Lad os samarbejde</span
+    >
+    <span
+      class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
+    ></span>
+  </button>
 </div>

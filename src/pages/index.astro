@@ -1,15 +1,187 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import stregtop from "../assets/images/stregtop.svg";
+import mig from "../assets/images/mig.png";
+import telefon from "../assets/images/telefon.svg";
+import mail from "../assets/images/mail.svg";
+import insta from "../assets/images/insta.svg";
+import git from "../assets/images/git.svg";
+import stregright from "../assets/images/stregright.svg";
+import stregleft from "../assets/images/stregright.svg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Personlig proffesionel profil">
+  <section>
+    <h1 class="text-[80px] text-[#E7EB79] zen ml-20 md:ml-40 md:text-[150px]">
+      Nick
+    </h1>
+
+    <h1 class="text-[80px] text-[#E7EB79] zen ml-40 md:ml-96 md:text-[150px]">
+      Dion
+    </h1>
+    <h1
+      class="text-[80px] text-[#E7EB79] zen ml-20 mb-10 md:ml-40 md:text-[150px]"
+    >
+      Jørgensen
+    </h1>
+    <Image src={stregtop} alt="img" />
+    <h2
+      class="text-[50px] text-[#E7EB79] ml-20 text-center zen md:ml-40 md:text-[100px]"
+    >
+      Digital Designer
+    </h2>
+
+    <p class="text-[18px] mt-52 raleway text-center italic">
+      "Jeg forvandler kreative idéer til visuelle festfyrværkerier"
+    </p>
+
+    <p class="text-[18px]raleway text-center mt-5">
+      Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde
+    </p>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+    <div class="flex justify-center">
+      <Image src={mig} alt="img" class="max-w-full h-auto" />
+    </div>
+
+    <div class="flex flex-col justify-center md:pl-10">
+      <h2
+        class="text-[36px] text-[#E7EB79] text-center zen md:text-left mt-10 md:mt-0 md:text-[64px]"
+      >
+        Hej med dig!
+      </h2>
+      <p class="text-[18px] raleway m-10 md:m-0 md:mr-14 md:mt-4 md:text-left">
+        Jeg hedder Nick og studerer multimediedesign på KEA. Jeg brænder for at
+        udvikle og skabe kreativt indhold samt webløsninger. <br /><br />Jeg
+        ønsker at finde en praktikplads, hvor jeg kan arbejde med webdesign og
+        grafisk design, hvor jeg kan skabe visuelle koncepter, der fanger og
+        engagerer brugeren. Derudover er jeg interesseret i UI/UX for at udvikle
+        brugervenlige oplevelser. <br /><br />Som multimediedesignstuderende har
+        jeg arbejdet med forskellige designværktøjer, herunder Adobe Photoshop,
+        Adobe Illustrator og Figma, hvilket har styrket mine evner til at skabe
+        effektive visuelle webløsninger.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:text-[64px]">
+      Teknologier og værktøjer
+    </h2>
+    <div
+      class="raleway grid grid-cols-2 gap-4 m-10 text-[18px] md:flex justify-center md:text-[36px]"
+    >
+      <div>
+        <p class="mb-8">• HTML</p>
+        <p class="mb-8">• CSS</p>
+        <p class="mb-8">• Javascript</p>
+        <p class="mb-8">• Tailwind</p>
+        <p class="mb-8">• Astro</p>
+      </div>
+      <div>
+        <p class="mb-8">• Adobe Illustrator</p>
+        <p class="mb-8">• Adobe Photoshop</p>
+        <p class="mb-8">• Figma</p>
+        <p class="mb-8">• Visual Studio Code</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20">
+      Uddannelse og erfaring
+    </h2>
+    <div class="raleway grid grid-cols-2 gap-4 m-10 mr-20 text-[18px]">
+      <p class="mb-8">KEA - Københavns Erhvervsakademi</p>
+      <p>Multimediedesigner <br /> 2023-nu</p>
+
+      <p class="mb-8">Vestskoven Gymnasium</p>
+      <p>STX <br /> 2017-2020</p>
+
+      <p class="mb-8">Pilehaveskolen</p>
+      <p>2007-2017</p>
+
+      <p>Ventilen</p>
+      <p>Frivillig kommunikationsmedarbejder <br /> 2021-2022</p>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="zen text-[#E7EB79] text-[36px] m-10 mt-20">
+      Lad os tale sammen om vores næste skridt!
+    </h3>
+    <div class="m-10">
+      <div class="flex items-center mb-5">
+        <Image src={telefon} alt="Telefon" width={36} height={36} />
+        <a
+          href="tel:+4527200215"
+          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5]"
+        >
+          +45 27 20 02 15
+        </a>
+      </div>
+      <div class="flex items-center">
+        <Image src={mail} alt="Mail" width={36} height={36} />
+        <a
+          href="mailto:nickjoergensen@icloud.com"
+          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5]"
+        >
+          nickjoergensen@icloud.com
+        </a>
+      </div>
+    </div>
+
+    {/* Opdater knappen til at åbne mail når der klikkes */}
+    <div class="flex justify-center">
+      <a
+        href="mailto:nickjoergensen@icloud.com"
+        class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group"
+      >
+        <span
+          class="relative z-10 transition-colors duration-400 group-hover:text-black raleway"
+          >Lad os samarbejde</span
+        >
+        <span
+          class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
+        ></span>
+      </a>
+    </div>
+
+    <div class="flex gap-4 justify-center m-10">
+      <a
+        href="https://www.instagram.com/nick_joergensen"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:stroke-[#E7EB79] hover:opacity-70 transition"
+      >
+        <Image src={insta} alt="Instagram" width={36} height={36} />
+      </a>
+      <a
+        href="https://github.com/nickmedia"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:stroke-[#E7EB79] hover:opacity-70 transition"
+      >
+        <Image src={git} alt="Github" width={36} height={36} />
+      </a>
+    </div>
+    <Image src={stregtop} alt="img" />
+  </section>
+
+  <script>
+    import { inView } from "motion";
+
+    const overskiftsection = document.querySelector(".overskiftsection");
+    inView(overskiftsection, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeInLeftBig",
+        "fadeInOpacity"
+      );
+    });
+  </script>
 </MainLayout>
