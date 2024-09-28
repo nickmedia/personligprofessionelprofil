@@ -10,12 +10,16 @@ import mail from "../assets/images/mail.svg";
 import insta from "../assets/images/insta.svg";
 import git from "../assets/images/git.svg";
 import stregright from "../assets/images/stregright.svg";
-import stregleft from "../assets/images/stregright.svg";
+import stregleft from "../assets/images/stregleft.svg";
+import pil from "../assets/images/pil.svg";
 ---
 
 <MainLayout title="Personlig proffesionel profil">
+  <!-- Hero sektion -->
   <section>
-    <h1 class="text-[80px] text-[#E7EB79] zen ml-20 md:ml-40 md:text-[150px]">
+    <h1
+      class="text-[80px] text-[#E7EB79] zen mt-10 ml-20 md:ml-40 md:text-[150px]"
+    >
       Nick
     </h1>
 
@@ -23,26 +27,30 @@ import stregleft from "../assets/images/stregright.svg";
       Dion
     </h1>
     <h1
-      class="text-[80px] text-[#E7EB79] zen ml-20 mb-10 md:ml-40 md:text-[150px]"
+      class="text-[80px] text-[#E7EB79] zen ml-20 mb-10 md:ml-[620px] md:text-[150px]"
     >
       Jørgensen
     </h1>
     <Image src={stregtop} alt="img" />
     <h2
-      class="text-[50px] text-[#E7EB79] ml-20 text-center zen md:ml-40 md:text-[100px]"
+      class="text-[50px] text-[#E7EB79] ml-20 mt-10 text-center zen md:ml-[620px] md:text-[100px]"
     >
       Digital Designer
     </h2>
+  </section>
 
-    <p class="text-[18px] mt-52 raleway text-center italic">
+  <!-- Citat sektion -->
+  <section>
+    <p class="text-[18px] mt-52 raleway text-center italic md:text-[24px]">
       "Jeg forvandler kreative idéer til visuelle festfyrværkerier"
     </p>
 
-    <p class="text-[18px]raleway text-center mt-5">
-      Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde
+    <p class="text-[18px] raleway text-center mt-10 mb-60 md:text-[24px]">
+      Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde.
     </p>
   </section>
 
+  <!-- Om mig sektion -->
   <section class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
     <div class="flex justify-center">
       <Image src={mig} alt="img" class="max-w-full h-auto" />
@@ -50,11 +58,13 @@ import stregleft from "../assets/images/stregright.svg";
 
     <div class="flex flex-col justify-center md:pl-10">
       <h2
-        class="text-[36px] text-[#E7EB79] text-center zen md:text-left mt-10 md:mt-0 md:text-[64px]"
+        class="text-[36px] text-[#E7EB79] text-center zen md:text-left mt-10 md:mt-0 md:text-[50px]"
       >
         Hej med dig!
       </h2>
-      <p class="text-[18px] raleway m-10 md:m-0 md:mr-14 md:mt-4 md:text-left">
+      <p
+        class="text-[18px] raleway m-10 md:m-0 md:mr-14 md:mt-4 md:text-left md:text-[20px]"
+      >
         Jeg hedder Nick og studerer multimediedesign på KEA. Jeg brænder for at
         udvikle og skabe kreativt indhold samt webløsninger. <br /><br />Jeg
         ønsker at finde en praktikplads, hvor jeg kan arbejde med webdesign og
@@ -68,12 +78,18 @@ import stregleft from "../assets/images/stregright.svg";
     </div>
   </section>
 
+  <!-- Højre streg -->
+  <div class="hidden md:block absolute right-0">
+    <Image src={stregright} alt="Right Line" class="h-[1150px]" />
+  </div>
+
+  <!-- Teknologier og værktøjer sektion -->
   <section>
-    <h2 class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:text-[64px]">
+    <h2 class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:text-[50px]">
       Teknologier og værktøjer
     </h2>
     <div
-      class="raleway grid grid-cols-2 gap-4 m-10 text-[18px] md:flex justify-center md:text-[36px]"
+      class="raleway grid grid-cols-2 gap-4 m-10 text-[18px] md:flex justify-center md:text-[20px] md:gap-60"
     >
       <div>
         <p class="mb-8">• HTML</p>
@@ -91,51 +107,66 @@ import stregleft from "../assets/images/stregright.svg";
     </div>
   </section>
 
+  <!-- Venstre streg -->
+  <div class="hidden md:block absolute">
+    <Image src={stregleft} alt="Left Line" class="h-[1150px]" />
+  </div>
+
+  <!-- Uddannelse og erfaring sektion -->
   <section>
-    <h2 class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20">
+    <h2
+      class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20 md:text-[50px]"
+    >
       Uddannelse og erfaring
     </h2>
-    <div class="raleway grid grid-cols-2 gap-4 m-10 mr-20 text-[18px]">
+    <div
+      class="raleway grid grid-cols-2 gap-4 mx-10 md:mx-[550px] md:gap-8 text-[20px]"
+    >
       <p class="mb-8">KEA - Københavns Erhvervsakademi</p>
-      <p>Multimediedesigner <br /> 2023-nu</p>
+      <p>Multimediedesigner <br /> 2023 - nu</p>
 
       <p class="mb-8">Vestskoven Gymnasium</p>
-      <p>STX <br /> 2017-2020</p>
+      <p>STX <br /> 2017 - 2020</p>
 
       <p class="mb-8">Pilehaveskolen</p>
-      <p>2007-2017</p>
+      <p>2007 - 2017</p>
 
       <p>Ventilen</p>
-      <p>Frivillig kommunikationsmedarbejder <br /> 2021-2022</p>
+      <p>Frivillig kommunikationsmedarbejder <br /> 2021 - 2022</p>
     </div>
   </section>
 
+  <!-- Mine projekter -->
+  <section></section>
+
+  <!-- Kontaktinfo sektion -->
   <section>
-    <h3 class="zen text-[#E7EB79] text-[36px] m-10 mt-20">
+    <h3
+      class="zen text-[#E7EB79] text-[36px] m-10 mt-20 md:text-[50px] md:text-center"
+    >
       Lad os tale sammen om vores næste skridt!
     </h3>
     <div class="m-10">
-      <div class="flex items-center mb-5">
+      <div class="flex items-center mb-5 md:ml-[575px] md:text-[10px]">
         <Image src={telefon} alt="Telefon" width={36} height={36} />
         <a
           href="tel:+4527200215"
-          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5]"
+          class="raleway text-[20px] md:text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
         >
           +45 27 20 02 15
         </a>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center mb-5 md:ml-[575px]">
         <Image src={mail} alt="Mail" width={36} height={36} />
         <a
           href="mailto:nickjoergensen@icloud.com"
-          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5]"
+          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
         >
           nickjoergensen@icloud.com
         </a>
       </div>
     </div>
 
-    {/* Opdater knappen til at åbne mail når der klikkes */}
     <div class="flex justify-center">
       <a
         href="mailto:nickjoergensen@icloud.com"
@@ -151,22 +182,19 @@ import stregleft from "../assets/images/stregright.svg";
       </a>
     </div>
 
-    <div class="flex gap-4 justify-center m-10">
-      <a
-        href="https://www.instagram.com/nick_joergensen"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:stroke-[#E7EB79] hover:opacity-70 transition"
-      >
-        <Image src={insta} alt="Instagram" width={36} height={36} />
+    <div class="flex gap-4 justify-center m-10 m">
+      <a href="https://www.instagram.com/nick_joergensen" target="_blank">
+        <div
+          class="bg-[url('src/assets/images/insta.svg')] hover:bg-[url('src/assets/images/instahover.svg')] bg-cover w-9 h-9 transition-all duration-300 ease-in-out"
+        >
+        </div>
       </a>
-      <a
-        href="https://github.com/nickmedia"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:stroke-[#E7EB79] hover:opacity-70 transition"
-      >
-        <Image src={git} alt="Github" width={36} height={36} />
+
+      <a href="https://github.com/nickmedia" target="_blank">
+        <div
+          class="bg-[url('src/assets/images/git.svg')] hover:bg-[url('src/assets/images/githover.svg')] bg-cover w-9 h-9 transition-all duration-300 ease-in-out"
+        >
+        </div>
       </a>
     </div>
     <Image src={stregtop} alt="img" />
