@@ -4,44 +4,39 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import stregtop from "../assets/images/stregtop.svg";
-import mig2 from "../assets/images/mig2.png";
 import mig3 from "../assets/images/mig3.png";
 import telefon from "../assets/images/telefon.svg";
 import mail from "../assets/images/mail.svg";
-import insta from "../assets/images/insta.svg";
-import git from "../assets/images/git.svg";
 import stregright from "../assets/images/stregright.svg";
 import stregleft from "../assets/images/stregleft.svg";
-import test from "../assets/images/test.jpg";
-import test2 from "../assets/images/test2.jpg";
-import test3 from "../assets/images/test3.jpg";
-import test4 from "../assets/images/test4.jpg";
-import test5 from "../assets/images/test5.jpg";
-import test6 from "../assets/images/test6.jpg";
 import digitalskrald from "../assets/images/digitalskrald.png";
 import info from "../assets/images/info.png";
+import affald from "../assets/images/affald.png";
+import sweet from "../assets/images/sweet.png";
 ---
 
-<MainLayout title="Personlig proffesionel profil">
+<MainLayout title="Personlig professionel profil">
   <!-- Hero sektion -->
   <section>
     <h1
-      class="text-[80px] text-[#E7EB79] zen mt-10 ml-20 md:ml-40 md:text-[150px]"
+      class="text-[80px] text-[#E7EB79] zen mt-10 ml-20 md:ml-40 md:text-[150px] fornavn"
     >
       Nick
     </h1>
 
-    <h1 class="text-[80px] text-[#E7EB79] zen ml-40 md:ml-96 md:text-[150px]">
+    <h1
+      class="text-[80px] text-[#E7EB79] zen ml-40 md:ml-96 md:text-[150px] mellemnavn"
+    >
       Dion
     </h1>
     <h1
-      class="text-[80px] text-[#E7EB79] zen ml-20 mb-10 md:ml-[620px] md:text-[150px]"
+      class="text-[80px] text-[#E7EB79] zen ml-20 mb-10 md:ml-[620px] md:text-[150px] efternavn"
     >
       Jørgensen
     </h1>
     <Image src={stregtop} alt="img" />
     <h2
-      class="text-[50px] text-[#E7EB79] ml-20 mt-10 text-center zen md:ml-[620px] md:text-[100px]"
+      class="text-[50px] text-[#E7EB79] ml-20 mt-10 text-center zen md:ml-[620px] md:text-[100px] designer"
     >
       Digital Designer
     </h2>
@@ -49,24 +44,28 @@ import info from "../assets/images/info.png";
 
   <!-- Citat sektion -->
   <section>
-    <p class="text-[18px] mt-52 raleway text-center italic md:text-[24px]">
-      "Jeg forvandler kreative idéer til visuelle festfyrværkerier"
-    </p>
+    <div class="citat">
+      <p
+        class="text-[18px] mt-52 raleway text-center italic md:text-[24px] md:mt-80"
+      >
+        "Jeg forvandler kreative idéer til visuelle festfyrværkerier"
+      </p>
 
-    <p
-      class="text-[18px] raleway text-center mt-10 mb-48 md:mb-60 md:text-[24px]"
-    >
-      Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde.
-    </p>
+      <p
+        class="text-[18px] raleway text-center mt-10 mb-48 md:mb-96 md:text-[24px]"
+      >
+        Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde.
+      </p>
+    </div>
   </section>
 
   <!-- Om mig sektion -->
   <section class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
-    <div class="flex justify-center">
+    <div class="flex justify-center items-center">
       <Image src={mig3} alt="img" />
     </div>
 
-    <div class="flex flex-col justify-center md:pl-10">
+    <div class="flex flex-col justify-center md:pl-10 ommig">
       <h2
         class="text-[36px] text-[#E7EB79] text-center zen md:text-left mt-10 md:mt-0 md:text-[50px]"
       >
@@ -76,14 +75,14 @@ import info from "../assets/images/info.png";
         class="text-[18px] raleway m-10 md:m-0 md:mr-14 md:mt-4 md:text-left md:text-[20px]"
       >
         Jeg hedder Nick og studerer multimediedesign på KEA. Jeg brænder for at
-        udvikle og skabe kreativt indhold samt webløsninger. <br /><br />Jeg
-        søger en praktikplads inden for webdesign og grafisk design, hvor jeg
-        kan udvikle visuelle koncepter, der fanger og engagerer brugeren.
-        Derudover er jeg interesseret i UI/UX for at udvikle brugervenlige
-        oplevelser. <br /><br />Som multimediedesignstuderende har jeg arbejdet
-        med forskellige designværktøjer, herunder Adobe Photoshop, Adobe
-        Illustrator og Figma, hvilket har styrket mine evner til at skabe
-        effektive visuelle webløsninger.
+        udvikle og skabe kreativt indhold samt webløsninger. <br /><br />
+        Jeg søger en praktikplads inden for webdesign og grafisk design, hvor jeg
+        kan udvikle visuelle koncepter, der fanger og engagerer brugeren. Derudover
+        er jeg interesseret i UI/UX for at udvikle brugervenlige oplevelser. <br
+        /><br />
+        Som multimediedesignstuderende har jeg arbejdet med forskellige designværktøjer,
+        herunder Adobe Photoshop, Adobe Illustrator og Figma, hvilket har styrket
+        mine evner til at skabe effektive visuelle webløsninger.
       </p>
     </div>
   </section>
@@ -94,7 +93,7 @@ import info from "../assets/images/info.png";
   </div>
 
   <!-- Teknologier og værktøjer sektion -->
-  <section>
+  <section class="værktøjer">
     <h2
       class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
     >
@@ -125,7 +124,7 @@ import info from "../assets/images/info.png";
   </div>
 
   <!-- Uddannelse og erfaring sektion -->
-  <section>
+  <section class="cv">
     <h2
       class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20 md:mt-40 md:text-[50px]"
     >
@@ -149,116 +148,262 @@ import info from "../assets/images/info.png";
   </section>
 
   <!-- Mine projekter -->
-  <section>
+  <section class="cases">
     <h2
       class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
     >
-      Mine projekter
+      Cases
     </h2>
-
-    <div class="m-5 md:m-20">
-      <div class="">
-        <Image src={digitalskrald} alt="img" />
-      </div>
-      <Image src={info} alt="img" />
-    </div>
-  </section>
-
-  <section>
-    <h2
-      class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
-    >
-      Mine projekter
-    </h2>
+    <p class="text-[18px] raleway text-center mt-5 md:text-[20px]">
+      Et lille udpluk af projekter jeg har lavet på studiet
+    </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-5 md:m-20">
-      <div class="relative group">
-        <Image src={digitalskrald} alt="img" />
+      <a
+        href="https://digitalskraldgruppe6.netlify.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative group h-full flex flex-col"
+      >
+        <Image
+          src={digitalskrald}
+          alt="img"
+          class="object-cover h-full w-full rounded-lg"
+        />
 
         <div
           class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
         >
         </div>
+
         <div
-          class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          class="absolute inset-0 flex items-center justify-center text-[#E7EB79] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <h3 class="text-xl raleway font-semibold">Digital skraldedag</h3>
+          <h3 class="text-[24px] font-semibold raleway">Digital skraldedag</h3>
+        </div>
+      </a>
+
+      <a
+        href="https://nickmedia.dk/website_spil/spil.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative group h-full flex flex-col"
+      >
+        <Image
+          src={sweet}
+          alt="img"
+          class="object-cover h-full w-full rounded-lg"
+        />
+
+        <div
+          class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
+        >
+        </div>
+
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[#E7EB79] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <h3 class="text-[24px] font-semibold raleway">Animation</h3>
+        </div>
+      </a>
+
+      <div class="relative group flex flex-col">
+        <Image src={info} alt="img" class="object-cover w-full rounded-lg" />
+
+        <div
+          class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
+        >
+        </div>
+
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[#E7EB79] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <h3 class="text-[24px] font-semibold raleway">Infografik</h3>
+        </div>
+      </div>
+
+      <div class="relative group flex flex-col">
+        <Image src={affald} alt="img" class="object-cover w-full rounded-lg" />
+
+        <div
+          class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
+        >
+        </div>
+
+        <div
+          class="absolute inset-0 flex items-center justify-center text-[#E7EB79] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <h3 class="text-[24px] font-semibold raleway">Infografik</h3>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Kontaktinfo sektion -->
-    <section>
-      <h3
-        class="zen text-[#E7EB79] text-[36px] m-10 mt-20 md:mt-40 md:text-[50px] md:text-center"
-      >
-        Lad os tale sammen om vores næste skridt!
-      </h3>
-      <div class="m-10">
-        <div class="flex items-center mb-5 md:ml-[575px] md:text-[10px]">
-          <Image src={telefon} alt="Telefon" width={36} height={36} />
-          <a
-            href="tel:+4527200215"
-            class="raleway text-[20px] md:text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
-          >
-            +45 27 20 02 15
-          </a>
-        </div>
-        <div class="flex items-center mb-5 md:ml-[575px]">
-          <Image src={mail} alt="Mail" width={36} height={36} />
-          <a
-            href="mailto:nickjoergensen@icloud.com"
-            class="raleway text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
-          >
-            nickjoergensen@icloud.com
-          </a>
-        </div>
+  <Image src={stregtop} alt="img" />
+
+  <!-- Kontaktinfo sektion -->
+  <section>
+    <h3
+      class="zen text-[#E7EB79] text-[36px] m-10 mt-20 md:mt-20 md:text-[50px] md:text-center skridt"
+    >
+      Lad os tale sammen om vores næste skridt!
+    </h3>
+    <div class="m-10 kontakt">
+      <div class="flex items-center mb-5 md:ml-[575px] md:text-[10px]">
+        <Image src={telefon} alt="Telefon" width={36} height={36} />
+        <a
+          href="tel:+4527200215"
+          class="raleway text-[20px] md:text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
+        >
+          +45 27 20 02 15
+        </a>
       </div>
-
-      <div class="flex justify-center">
+      <div class="flex items-center mb-5 md:ml-[575px]">
+        <Image src={mail} alt="Mail" width={36} height={36} />
         <a
           href="mailto:nickjoergensen@icloud.com"
-          class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group mt-5 mb-5"
+          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
         >
-          <span
-            class="relative z-10 transition-colors duration-400 group-hover:text-black raleway"
-            >Start samarbejdet</span
-          >
-          <span
-            class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
-          ></span>
+          nickjoergensen@icloud.com
         </a>
       </div>
+    </div>
 
-      <div class="flex gap-4 justify-center m-5">
-        <a href="https://www.instagram.com/nick_joergensen" target="_blank">
-          <div
-            class="bg-[url('src/assets/images/insta.svg')] hover:bg-[url('src/assets/images/instahover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
-          >
-          </div>
-        </a>
+    <div class="flex justify-center">
+      <a
+        href="mailto:nickjoergensen@icloud.com"
+        class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group mt-5 mb-5 vibrate-1"
+      >
+        <span
+          class="relative z-10 transition-colors duration-400 group-hover:text-black raleway"
+          >Start samarbejdet</span
+        >
+        <span
+          class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
+        ></span>
+      </a>
+    </div>
 
-        <a href="https://github.com/nickmedia" target="_blank">
-          <div
-            class="bg-[url('src/assets/images/git.svg')] hover:bg-[url('src/assets/images/githover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
-          >
-          </div>
-        </a>
-      </div>
-      <!-- <Image src={stregtop} alt="img" /> -->
-    </section>
+    <div class="flex gap-4 justify-center m-5 mb-20">
+      <a href="https://www.instagram.com/nick_joergensen" target="_blank">
+        <div
+          class="bg-[url('src/assets/images/insta.svg')] hover:bg-[url('src/assets/images/instahover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
+        >
+        </div>
+      </a>
 
-    <script>
-      import { inView } from "motion";
-
-      const overskiftsection = document.querySelector(".overskiftsection");
-      inView(overskiftsection, ({ target }) => {
-        target.classList.add(
-          "animate__animated",
-          "animate__fadeInLeftBig",
-          "fadeInOpacity"
-        );
-      });
-    </script>
+      <a href="https://github.com/nickmedia" target="_blank">
+        <div
+          class="bg-[url('src/assets/images/git.svg')] hover:bg-[url('src/assets/images/githover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
+        >
+        </div>
+      </a>
+    </div>
   </section>
+
+  <script>
+    import { inView } from "motion";
+
+    const fornavn = document.querySelector(".fornavn");
+    inView(fornavn, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__lightSpeedInLeft",
+        "fadeInOpacity"
+      );
+    });
+    const mellemnavn = document.querySelector(".mellemnavn");
+    inView(mellemnavn, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__bounceInRight",
+        "fadeInOpacity"
+      );
+    });
+
+    const efternavn = document.querySelector(".efternavn");
+    inView(efternavn, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__lightSpeedInLeft",
+        "fadeInOpacity"
+      );
+    });
+
+    const designer = document.querySelector(".designer");
+    inView(designer, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity"
+      );
+    });
+
+    const citat = document.querySelector(".citat");
+    inView(citat, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity"
+      );
+    });
+
+    const ommig = document.querySelector(".ommig");
+    inView(ommig, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity",
+        "animate__delay-1s"
+      );
+    });
+
+    const værktøjer = document.querySelector(".værktøjer");
+    inView(værktøjer, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity",
+        "animate__delay-1s"
+      );
+    });
+
+    const cv = document.querySelector(".cv");
+    inView(cv, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity",
+        "animate__delay-1s"
+      );
+    });
+
+    const cases = document.querySelector(".cases");
+    inView(cases, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity",
+        "animate__delay-1s"
+      );
+    });
+
+    const skridt = document.querySelector(".skridt");
+    inView(skridt, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__lightSpeedInRight",
+        "fadeInOpacity"
+      );
+    });
+
+    const kontakt = document.querySelector(".kontakt");
+    inView(kontakt, ({ target }) => {
+      target.classList.add(
+        "animate__animated",
+        "animate__fadeIn",
+        "fadeInOpacity"
+      );
+    });
+  </script>
 </MainLayout>
