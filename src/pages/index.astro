@@ -4,14 +4,22 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import stregtop from "../assets/images/stregtop.svg";
-import mig from "../assets/images/mig.png";
+import mig2 from "../assets/images/mig2.png";
+import mig3 from "../assets/images/mig3.png";
 import telefon from "../assets/images/telefon.svg";
 import mail from "../assets/images/mail.svg";
 import insta from "../assets/images/insta.svg";
 import git from "../assets/images/git.svg";
 import stregright from "../assets/images/stregright.svg";
 import stregleft from "../assets/images/stregleft.svg";
-import pil from "../assets/images/pil.svg";
+import test from "../assets/images/test.jpg";
+import test2 from "../assets/images/test2.jpg";
+import test3 from "../assets/images/test3.jpg";
+import test4 from "../assets/images/test4.jpg";
+import test5 from "../assets/images/test5.jpg";
+import test6 from "../assets/images/test6.jpg";
+import digitalskrald from "../assets/images/digitalskrald.png";
+import info from "../assets/images/info.png";
 ---
 
 <MainLayout title="Personlig proffesionel profil">
@@ -45,7 +53,9 @@ import pil from "../assets/images/pil.svg";
       "Jeg forvandler kreative idéer til visuelle festfyrværkerier"
     </p>
 
-    <p class="text-[18px] raleway text-center mt-10 mb-60 md:text-[24px]">
+    <p
+      class="text-[18px] raleway text-center mt-10 mb-48 md:mb-60 md:text-[24px]"
+    >
       Det lyder ret fedt, ik? Tag et kig på hvad jeg kan tilbyde.
     </p>
   </section>
@@ -53,26 +63,26 @@ import pil from "../assets/images/pil.svg";
   <!-- Om mig sektion -->
   <section class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
     <div class="flex justify-center">
-      <Image src={mig} alt="img" class="max-w-full h-auto" />
+      <Image src={mig3} alt="img" />
     </div>
 
     <div class="flex flex-col justify-center md:pl-10">
       <h2
         class="text-[36px] text-[#E7EB79] text-center zen md:text-left mt-10 md:mt-0 md:text-[50px]"
       >
-        Hej med dig!
+        Halløj, mød designeren!
       </h2>
       <p
         class="text-[18px] raleway m-10 md:m-0 md:mr-14 md:mt-4 md:text-left md:text-[20px]"
       >
         Jeg hedder Nick og studerer multimediedesign på KEA. Jeg brænder for at
         udvikle og skabe kreativt indhold samt webløsninger. <br /><br />Jeg
-        ønsker at finde en praktikplads, hvor jeg kan arbejde med webdesign og
-        grafisk design, hvor jeg kan skabe visuelle koncepter, der fanger og
-        engagerer brugeren. Derudover er jeg interesseret i UI/UX for at udvikle
-        brugervenlige oplevelser. <br /><br />Som multimediedesignstuderende har
-        jeg arbejdet med forskellige designværktøjer, herunder Adobe Photoshop,
-        Adobe Illustrator og Figma, hvilket har styrket mine evner til at skabe
+        søger en praktikplads inden for webdesign og grafisk design, hvor jeg
+        kan udvikle visuelle koncepter, der fanger og engagerer brugeren.
+        Derudover er jeg interesseret i UI/UX for at udvikle brugervenlige
+        oplevelser. <br /><br />Som multimediedesignstuderende har jeg arbejdet
+        med forskellige designværktøjer, herunder Adobe Photoshop, Adobe
+        Illustrator og Figma, hvilket har styrket mine evner til at skabe
         effektive visuelle webløsninger.
       </p>
     </div>
@@ -85,7 +95,9 @@ import pil from "../assets/images/pil.svg";
 
   <!-- Teknologier og værktøjer sektion -->
   <section>
-    <h2 class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:text-[50px]">
+    <h2
+      class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
+    >
       Teknologier og værktøjer
     </h2>
     <div
@@ -115,12 +127,12 @@ import pil from "../assets/images/pil.svg";
   <!-- Uddannelse og erfaring sektion -->
   <section>
     <h2
-      class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20 md:text-[50px]"
+      class="text-[36px] text-[#E7EB79] text-center zen m-10 mt-20 md:mt-40 md:text-[50px]"
     >
       Uddannelse og erfaring
     </h2>
     <div
-      class="raleway grid grid-cols-2 gap-4 mx-10 md:mx-[550px] md:gap-8 text-[20px]"
+      class="raleway grid grid-cols-2 gap-4 mx-10 text-[18px] md:mx-[550px] md:gap-8 md:text-[20px]"
     >
       <p class="mb-8">KEA - Københavns Erhvervsakademi</p>
       <p>Multimediedesigner <br /> 2023 - nu</p>
@@ -137,79 +149,116 @@ import pil from "../assets/images/pil.svg";
   </section>
 
   <!-- Mine projekter -->
-  <section></section>
-
-  <!-- Kontaktinfo sektion -->
   <section>
-    <h3
-      class="zen text-[#E7EB79] text-[36px] m-10 mt-20 md:text-[50px] md:text-center"
+    <h2
+      class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
     >
-      Lad os tale sammen om vores næste skridt!
-    </h3>
-    <div class="m-10">
-      <div class="flex items-center mb-5 md:ml-[575px] md:text-[10px]">
-        <Image src={telefon} alt="Telefon" width={36} height={36} />
-        <a
-          href="tel:+4527200215"
-          class="raleway text-[20px] md:text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
-        >
-          +45 27 20 02 15
-        </a>
+      Mine projekter
+    </h2>
+
+    <div class="m-5 md:m-20">
+      <div class="">
+        <Image src={digitalskrald} alt="img" />
       </div>
-      <div class="flex items-center mb-5 md:ml-[575px]">
-        <Image src={mail} alt="Mail" width={36} height={36} />
-        <a
-          href="mailto:nickjoergensen@icloud.com"
-          class="raleway text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
-        >
-          nickjoergensen@icloud.com
-        </a>
-      </div>
+      <Image src={info} alt="img" />
     </div>
-
-    <div class="flex justify-center">
-      <a
-        href="mailto:nickjoergensen@icloud.com"
-        class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group"
-      >
-        <span
-          class="relative z-10 transition-colors duration-400 group-hover:text-black raleway"
-          >Lad os samarbejde</span
-        >
-        <span
-          class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
-        ></span>
-      </a>
-    </div>
-
-    <div class="flex gap-4 justify-center m-10 m">
-      <a href="https://www.instagram.com/nick_joergensen" target="_blank">
-        <div
-          class="bg-[url('src/assets/images/insta.svg')] hover:bg-[url('src/assets/images/instahover.svg')] bg-cover w-9 h-9 transition-all duration-300 ease-in-out"
-        >
-        </div>
-      </a>
-
-      <a href="https://github.com/nickmedia" target="_blank">
-        <div
-          class="bg-[url('src/assets/images/git.svg')] hover:bg-[url('src/assets/images/githover.svg')] bg-cover w-9 h-9 transition-all duration-300 ease-in-out"
-        >
-        </div>
-      </a>
-    </div>
-    <Image src={stregtop} alt="img" />
   </section>
 
-  <script>
-    import { inView } from "motion";
+  <section>
+    <h2
+      class="text-[36px] text-[#E7EB79] text-center zen mt-20 md:mt-40 md:text-[50px]"
+    >
+      Mine projekter
+    </h2>
 
-    const overskiftsection = document.querySelector(".overskiftsection");
-    inView(overskiftsection, ({ target }) => {
-      target.classList.add(
-        "animate__animated",
-        "animate__fadeInLeftBig",
-        "fadeInOpacity"
-      );
-    });
-  </script>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-5 md:m-20">
+      <div class="relative group">
+        <Image src={digitalskrald} alt="img" />
+
+        <div
+          class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
+        >
+        </div>
+        <div
+          class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <h3 class="text-xl raleway font-semibold">Digital skraldedag</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontaktinfo sektion -->
+    <section>
+      <h3
+        class="zen text-[#E7EB79] text-[36px] m-10 mt-20 md:mt-40 md:text-[50px] md:text-center"
+      >
+        Lad os tale sammen om vores næste skridt!
+      </h3>
+      <div class="m-10">
+        <div class="flex items-center mb-5 md:ml-[575px] md:text-[10px]">
+          <Image src={telefon} alt="Telefon" width={36} height={36} />
+          <a
+            href="tel:+4527200215"
+            class="raleway text-[20px] md:text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
+          >
+            +45 27 20 02 15
+          </a>
+        </div>
+        <div class="flex items-center mb-5 md:ml-[575px]">
+          <Image src={mail} alt="Mail" width={36} height={36} />
+          <a
+            href="mailto:nickjoergensen@icloud.com"
+            class="raleway text-[20px] ml-5 hover:text-[#8EB8E5] transition-all duration-300 ease-in-out"
+          >
+            nickjoergensen@icloud.com
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <a
+          href="mailto:nickjoergensen@icloud.com"
+          class="relative inline-block px-5 py-3 text-lg font-medium text-white uppercase border-2 border-[#E7EB79] bg-transparent overflow-hidden transition-colors duration-400 group mt-5 mb-5"
+        >
+          <span
+            class="relative z-10 transition-colors duration-400 group-hover:text-black raleway"
+            >Start samarbejdet</span
+          >
+          <span
+            class="absolute inset-0 w-full h-full bg-[#E7EB79] transform translate-y-full transition-transform duration-400 ease-in-out group-hover:translate-y-0"
+          ></span>
+        </a>
+      </div>
+
+      <div class="flex gap-4 justify-center m-5">
+        <a href="https://www.instagram.com/nick_joergensen" target="_blank">
+          <div
+            class="bg-[url('src/assets/images/insta.svg')] hover:bg-[url('src/assets/images/instahover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
+          >
+          </div>
+        </a>
+
+        <a href="https://github.com/nickmedia" target="_blank">
+          <div
+            class="bg-[url('src/assets/images/git.svg')] hover:bg-[url('src/assets/images/githover.svg')] bg-cover w-7 h-7 transition-all duration-300 ease-in-out"
+          >
+          </div>
+        </a>
+      </div>
+      <!-- <Image src={stregtop} alt="img" /> -->
+    </section>
+
+    <script>
+      import { inView } from "motion";
+
+      const overskiftsection = document.querySelector(".overskiftsection");
+      inView(overskiftsection, ({ target }) => {
+        target.classList.add(
+          "animate__animated",
+          "animate__fadeInLeftBig",
+          "fadeInOpacity"
+        );
+      });
+    </script>
+  </section>
 </MainLayout>

@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
 import "animate.css";
+
 const { title } = Astro.props;
 ---
 
@@ -24,7 +25,8 @@ const { title } = Astro.props;
     />
     <title>{Astro.props.title}</title>
   </head>
-  <body class="bg-[#000000] text-[#F2F4FF]"> </body><header></header>
+  <body class="bg-gradient-to-r from-[#000000] to-[#010413] text-[#F2F4FF]">
+  </body><header></header>
 
   <main>
     <slot />
