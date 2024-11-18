@@ -13,6 +13,7 @@ import digitalskrald from "../assets/images/digitalskrald.png";
 import info from "../assets/images/info.png";
 import affald from "../assets/images/affald.png";
 import sweet from "../assets/images/sweet.png";
+import singleusesucks from "../assets/images/singleusesucks.png";
 ---
 
 <MainLayout title="Personlig professionel profil">
@@ -207,8 +208,17 @@ import sweet from "../assets/images/sweet.png";
         </div>
       </a>
 
-      <div class="relative group flex flex-col">
-        <Image src={info} alt="img" class="object-cover w-full rounded-lg" />
+      <a
+        href="https://doessingleusesuck.netlify.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative group h-full flex flex-col"
+      >
+        <Image
+          src={singleusesucks}
+          alt="img"
+          class="object-cover h-full w-full rounded-lg"
+        />
 
         <div
           class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
@@ -218,12 +228,12 @@ import sweet from "../assets/images/sweet.png";
         <div
           class="absolute inset-0 flex items-center justify-center text-[#E7EB79] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <h3 class="text-[24px] font-semibold raleway">Infografik</h3>
+          <h3 class="text-[24px] font-semibold raleway">#Singleusesucks</h3>
         </div>
-      </div>
+      </a>
 
       <div class="relative group flex flex-col">
-        <Image src={affald} alt="img" class="object-cover w-full rounded-lg" />
+        <Image src={info} alt="img" class="object-cover w-full rounded-lg" />
 
         <div
           class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"
